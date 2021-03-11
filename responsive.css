@@ -1,0 +1,194 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 800px) {
+  
+  footer {
+    text-align: center;
+  }
+  .lesson-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .btn {
+    width: 100%;
+  }
+  
+  .facebook {
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper {
+	  height: 330px;
+    text-align: left;
+	padding: 100px 0 5px 0;
+  }
+  .container2 {
+  padding: 0px;
+  }
+  /* Tambahkan CSS untuk header-right */
+  .header-right{
+    display: none;
+  }
+  
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon{
+    display: block;
+  }
+  .top-wrapper{
+	  height: auto;
+  }
+  .top-wrapper font{
+	display: none;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .kotak {
+	  display: none;
+  }
+  .top-wrapper p {
+    display: none;
+  }
+  .kotak {
+    font-size: 20px;
+    color: #fff;
+    width: 60px;
+    float: left;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border-right: 0px solid #fff;
+}
+.container font{
+	display:none;
+}
+.container br{
+	display:none;
+}
+.nav {
+	height: 50px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.nav-token {
+	height: 50px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.nav button{
+	width: 35%;
+	height: 37px;
+	float: left;
+	line-height: 37px;
+	font-size: 13px;
+	border-radius: 4px;
+}
+.nav button:hover{
+	box-shadow: none;
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
+.nav marquee{
+	width: 58%;
+	height: 37px;
+	float: right;
+	line-height: 37px;
+	font-size: 15px;
+}
+
+.nav-token marquee{
+	width: 90%;
+	height: 37px;
+	float: right;
+	line-height: 37px;
+	font-size: 15px;
+}
+
+.nav form{
+	width: 750px;
+	height: 0px;
+}
+.nav input{
+	width: 100%;
+	height: 0px;
+	float: left;
+	line-height: 37px;
+	font-size: 13px;
+	border-radius: 4px;
+}
+.nav input:hover{
+	box-shadow: none;
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
+.lonceng{
+	width: 4%;
+	height: 37px;
+	float: right;
+	margin-top: 12px;
+}
+.lesson {
+  float: left;
+  width: 43%;
+  height: 250px;
+  border: 0.2px solid #c9c9c9;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 4px #c2c2c2;
+  cursor: pointer;
+}
+.lesson:hover{
+	border: 1px solid #c2c2c2;
+	box-shadow: none;
+	transform: scale(1.1);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.b-lesson{
+	width: 100%;
+	height : 5px;
+	margin-top: 70px;
+	
+}
+.b-lesson p{
+	display:none;
+}
+.b-lesson font{
+	font-size: 19px;
+	font-weight: bold;
+}
+.img-lesson{
+	width:100%;
+	height: 50px;
+}
+.img-lesson img{
+	line-height: 50px;
+}
+.c-lesson{
+	margin-top: 45px;
+}
+}
+@media all and (max-width: 570px) {
+.lesson {
+  height: 230px;
+}
+}
+

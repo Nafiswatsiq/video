@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'lcd';
+    src: url('https://rawcdn.githack.com/Nafiswatsiq/font/34fa501533836b767279267733fc2cd44002f7a1/lcd.ttf');
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #292929;
+    --font-color: #424242;
+    --bg-color: #fff;
+	--box-kotak-color: #fcfeff;
+    --heading-color: #292922;
+	--bg2-color: #fcfeff;
+	--b-lesson-font-color: #595959;
+	--text-contents-color: #b3aeb5;
+	--black-white-color: #000;
+	--domain-h1-color: #0095ff;
+	--domain-h3-color: #5c5c5c;
+	--domain-h6-color: #949494;
+	--cpanel-p-color: #424242;
+	--cpanel-h1-color: #0095ff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+	--box-kotak-color: #999999;
+    --heading-color: #818cab;
+	--bg2-color: #919191;
+	--b-lesson-font-color: #e1e1ff;
+	--text-contents-color: #fff;
+	--black-white-color: #fff;
+	--domain-h1-color: #bde3ff;
+	--domain-h3-color: #ffffff;
+	--domain-h6-color: #f5f5f5;
+	--cpanel-p-color: #cfebff;
+	--cpanel-h1-color: #5cbbff;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 45px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 2px;
+  content: "";
+  height: 21px;
+  left: 3px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #34a0e3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.theme-switch-wrapper{
+margin-top: 5px;
+float:left;
+}
+em {
+    font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.kotak {
+    font-size: 50px;
+    color: #fff;
+    width: 90px;
+    float: left;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border-right: 0px solid #fff;
+}
+
+.nav {
+	background: #fff;
+	width: 100%;
+	height: 75px;
+	margin-top: 30px;
+	border: 0.2px solid #c9c9c9;
+	padding: 14px;
+	border-radius: 7px;
+}
+
+.nav-token {
+	background: #fff;
+	width: 100%;
+	height: 75px;
+	margin-top: 30px;
+	border: 0.2px solid #c9c9c9;
+	padding: 14px;
+	border-radius: 7px;
+}
+.nav button{
+	background:#ff7300;
+	width: 15%;
+	height: 45px;
+	float: left;
+	color: #fff;
+	font-size: 17px;
+	line-height: 45px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #c2c2c2;
+	cursor: pointer;
+}
+.nav button:hover{
+	box-shadow: none;
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
+.nav marquee{
+	width: 78%;
+	height: 45px;
+	float: right;
+	line-height: 45px;
+	font-size: 17px;
+}
+
+.nav-token marquee{
+	width: 95%;
+	height: 45px;
+	float: right;
+	line-height: 45px;
+	font-size: 17px;
+}
+.lonceng{
+	width: 4%;
+	height: 45px;
+	float: right;
+	margin-top: 15px;
+}
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container2 {
+  max-width: 1170px;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px auto;
+}
+.top-wrapper {
+	height:auto;
+  padding: 180px 0 100px 0;
+  background-image: url(https://cdynamics.no/wp-content/uploads/2017/10/iStock-507799642-halfscale-1920x1280.jpg);
+  background-size: cover;
+  color: white;
+  text-align: left;
+}
+
+.container h1 {
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon{
+  color: #fff;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0px;
+  display: none;
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.lesson-wrapper-token {
+  padding-bottom: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.lesson {
+
+  float: left;
+  width: 20%;
+  height: 400px;
+  border: 0.2px solid #c9c9c9;
+  border-radius: 8px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+  box-shadow: 5px 5px 4px #c2c2c2;
+  cursor: pointer;
+  background-color: var(--bg2-color);
+}
+.lesson:hover{
+	border: 1px solid #c2c2c2;
+	box-shadow: none;
+	transform: scale(1.1);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.b-lesson{
+	width: 100%;
+	height : 75px;
+	margin-top: 50px;
+}
+.b-lesson font{
+	color: var(--b-lesson-font-color);
+
+	font-size: 19px;
+	font-weight: bold;
+}
+.img-lesson{
+	width:100%;
+	height: 120px;
+}
+.img-lesson img{
+	line-height: 130px;
+}
+
+.c-lesson{
+	margin-top: 70px;
+}
+.c-lesson p{
+	font-size: 13px;
+	color: #454545;
+	font-weight: bold;
+	opacity: 60%;
+	margin-bottom: 7px;
+}
+
+.c-lesson h3{
+	font-size: 17px;
+	margin-top:0px;
+	color: #2e2e2e;
+}
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: var(--text-contents-color);
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer li{
+	list-style-type: none;
+}
+footer a{
+	color: #3d3d3d;
+}
